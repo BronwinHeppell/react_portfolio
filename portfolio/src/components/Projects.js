@@ -4,6 +4,18 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+
+import tarotLogo from "../assets/img/projects/tarot.png";
+import hrLeaveManagementLogo from "../assets/img/projects/HrLeaveManagement.png";
+import sociopediaLogo from "../assets/img/projects/Sociopedia.png";
+import constrictorLogo from "../assets/img/projects/Constrictor.png";
+
+import tamnacityLogo from "../assets/img/projects/TAMNACITYLOGO2023.png";
+import kingsmenLogo from "../assets/img/projects/KINGSMEN2.png";
+import beulahLogo from "../assets/img/projects/Beulah2.png";
+import handymanLogo from "../assets/img/projects/Handyman.png";
+import bronwinLogo from "../assets/img/projects/Bronwin.png";
+
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -12,47 +24,52 @@ export const Projects = () => {
     {
       title: "Sociopedia",
       description: "MongoDB,Node.js,Express.js,React.js",
-      imgUrl: projImg1,
+      imgUrl: sociopediaLogo,
+      githubUrl: "https://github.com/BronwinHeppell/MERN_Social_App",
     },
     {
       title: "HR Leave Management",
       description: "Entity Framework core, ASP.NET, SQL",
-      imgUrl: projImg2,
+      imgUrl: hrLeaveManagementLogo,
+      githubUrl: "https://github.com/BronwinHeppell/LeaveManagement.Web",
     },
     {
       title: "Butterfly Tarot Cards",
       description: "JavaScript, CSS, HTML",
-      imgUrl: projImg3,
+      imgUrl: tarotLogo,
+      githubUrl: "https://github.com/BronwinHeppell/ButterflyTarot",
     },
     {
       title: "Constrictor Jiu Jitsu",
       description: "TypeScript, React,JavaScript,CSS",
-      imgUrl: projImg1,
+      imgUrl: constrictorLogo,
+      githubUrl:
+        "https://github.com/BronwinHeppell/React_Constrictor_Jiu_Jitsu",
     },
     {
       title: "Tamnacity Logo Design",
       description: "Design for a nail Salon",
-      imgUrl: projImg2,
+      imgUrl: tamnacityLogo,
     },
     {
-      title: "KingsMen BarberShop Logo Design",
+      title: "Kingsmen BarberShop Logo Design",
       description: "Design for a Barbershop ",
-      imgUrl: projImg3,
+      imgUrl: kingsmenLogo,
     },
     {
       title: "Handyman.co.za Logo Design",
       description: "Design for a Handyman website ",
-      imgUrl: projImg3,
+      imgUrl: handymanLogo,
     },
     {
       title: "Beulah Lashes & Brows Logo Design",
       description: "Design for a Lash and Brow studio",
-      imgUrl: projImg3,
+      imgUrl: beulahLogo,
     },
     {
       title: "Bronwin Heppell Logo Design",
       description: "Design for my own work ",
-      imgUrl: projImg3,
+      imgUrl: bronwinLogo,
     },
   ];
 
@@ -106,13 +123,10 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
+                      <Tab.Pane eventKey="second">
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          To get in touch with me, feel free to fill in the form
+                          below and you will hear back from me soon!
                         </p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">

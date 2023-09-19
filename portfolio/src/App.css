@@ -356,6 +356,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+.round-image-container {
+  position: relative;
+  display: inline-block; /* Ensures the container fits the image's size */
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
@@ -434,6 +447,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  height: 200px;
 }
 .proj-imgbx::before {
   content: "";
@@ -447,6 +461,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-imgbx:hover::before {
   height: 100%;
 }
+
+.proj-img {
+  height: 100%;
+  object-fit: cover;
+}
 .proj-txtx {
   position: absolute;
   text-align: center;
@@ -457,10 +476,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 0;
   width: 100%;
 }
+
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
   opacity: 1;
 }
+
+.proj-imgbx:hover .darkened-image {
+  filter: brightness(
+    0.5
+  ); /* Adjust the brightness value as needed (0.7 is an example) */
+  /* Additional styling for the darkened image goes here */
+}
+
 .proj-txtx h4 {
   font-size: 30px;
   font-weight: 700;

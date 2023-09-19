@@ -1,10 +1,11 @@
-import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { useEffect, useState } from "react";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "../assets/img/Bronwinlogo.png";
+import githubIcon from "../assets/img/github-nav-icon.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 
-import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -72,8 +73,19 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/bronwin-heppell">
-                  <img src={navIcon1} alt="" />
+                <a
+                  href="https://www.linkedin.com/in/bronwin-heppell"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={navIcon1} alt="linkedIn" />
+                </a>
+                <a
+                  href="https://github.com/BronwinHeppell"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src={githubIcon} alt="gitHub" />
                 </a>
               </div>
               <HashLink to="#connect">
